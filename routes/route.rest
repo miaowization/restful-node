@@ -1,0 +1,29 @@
+GET http://localhost:4000/subscribers
+
+###
+
+GET http://localhost:4000/subscribers/[id]
+
+###
+
+
+PATCH http://localhost:4000/subscribers/[id]
+Content-Type: application/json
+
+{
+    "name":"Tommy"
+}
+###
+
+DELETE http://localhost:4000/subscribers/[id]
+
+###
+
+
+POST http://localhost:4000/subscribers
+Content-Type: application/json
+
+{
+    "name":"Lizzy",
+    "subscribedChannel": "Bennettdees Channel"
+}
